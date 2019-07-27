@@ -1,8 +1,13 @@
-#+TITLE: README
+#+TITLE: GENERAL INFO
 
 * Usage
 - docker-compose up(-d for detach --build if you change Dockerfile or add new
 dependency(Pipfile\package.json))
+
+** Branches:
+- master(just for init)
+- frontend(oprhan),fronted/develop
+- backend(orphan), backend/develop
 
 ** Frontend:
 - ***TODO***
@@ -14,4 +19,4 @@ dependency(Pipfile\package.json))
 ** Endpoints
  - 0.0.0.0:8002 => rest overview
  - 0.0.0.0:8002/admin  => admin page
- - 0.0.0.0:8001 => - frontend/react
+ - 0.0.0.0:8001 => frontend/react
