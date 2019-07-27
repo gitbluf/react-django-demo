@@ -1,0 +1,31 @@
+---
+version: '3.2'
+
+services:
+#  db:
+ #   image: postgres
+ #   restart: always
+ #   volumes:
+   #   - ./data:/var/lib/postgressql
+  frontend:
+    build:
+      dockerfile: Dockerfile
+      context: ./frontend
+    image: react-front
+    volumes:
+      - ./frontend/:/usr/src/app
+    ports:
+      - 8001:8081
+    depends_on:
+     - backend
+  backend:
+    build:
+      dockerfile: Dockerfile
+      context: ./backend
+    image: django-backend
+    volumes:
+      - ./backend/:/code
+    ports:
+      - 8002:8000
+  #  depends_on:
+   #   - db

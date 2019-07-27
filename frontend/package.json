@@ -1,0 +1,12 @@
+{
+    "name": "package-name",
+    "description": "description",
+    "version": "1.0.0",
+    "author": "parrot <mrpetovic@outlook.com>",
+    "license": "MIT",
+    "main": "app/main.js",
+    "scripts": {
+    },
+    "dependencies": {},
+    "devDependencies": {}
+}
