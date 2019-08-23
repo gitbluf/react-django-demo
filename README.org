@@ -10,7 +10,8 @@ dependency(Pipfile\package.json))
 - backend(orphan), backend/develop
 
 ** Frontend:
-- ***TODO***
+- react, axios, sass
+- http://localhost:3000/
  
 ** Backend
 - python3, django, djangorestframework
